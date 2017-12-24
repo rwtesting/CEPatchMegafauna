@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+
+    <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>Megafauna</modName>
+    </li>
+
+    <!-- ========== Gomphotaria ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Serpentine</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Gomphotaria : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Gomphotaria : Stats -->
+
+
+    <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]/race/baseHealthScale</xpath>
+    <value>
+        <baseHealthScale>9</baseHealthScale>
+    </value>
+    </li>
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gomphotaria"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.09</MeleeDodgeChance>
+        <MeleeCritChance>0.4</MeleeCritChance>
+        <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.13</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Diprotodon ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Diprotodon : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Diprotodon : Stats -->
+
+
+    <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/race/baseHealthScale</xpath>
+    <value>
+        <baseHealthScale>7</baseHealthScale>
+    </value>
+    </li>
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Diprotodon"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.12</MeleeDodgeChance>
+        <MeleeCritChance>0.7</MeleeCritChance>
+        <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== ShortfacedBear ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch ShortfacedBear : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]/surpriseAttack</xpath>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]/surpriseAttack</xpath>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch ShortfacedBear : Stats -->
+
+
+    <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/race/baseHealthScale</xpath>
+    <value>
+        <baseHealthScale>7.5</baseHealthScale>
+    </value>
+    </li>
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.09</MeleeDodgeChance>
+        <MeleeCritChance>0.4</MeleeCritChance>
+        <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Dinocrocuta ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Dinocrocuta : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Dinocrocuta : Stats -->
+
+
+    <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/race/baseHealthScale</xpath>
+    <value>
+        <baseHealthScale>7</baseHealthScale>
+    </value>
+    </li>
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeCritChance>0.5</MeleeCritChance>
+        <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Sivatherium ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Sivatherium : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+        <armorPenetration>0.17</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+        <armorPenetration>0.17</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="HeadAttackTool"]</xpath>
+    <value>
+        <armorPenetration>0.13</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- Patch Sivatherium : Stats -->
+
+
+    <li Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/race/baseHealthScale</xpath>
+    <value>
+        <baseHealthScale>9</baseHealthScale>
+    </value>
+    </li>
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sivatherium"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        <MeleeCritChance>0.45</MeleeCritChance>
+        <ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.16</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Andrewsarchus ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Andrewsarchus : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
+    <value>
+        <armorPenetration>0.25</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Andrewsarchus : Stats -->
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeCritChance>0.5</MeleeCritChance>
+        <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Dinornis ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Dinornis"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Birdlike</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Dinornis : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Feet"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Feet"]</xpath>
+    <value>
+        <armorPenetration>0.15</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Feet"]/surpriseAttack</xpath>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Beak"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Dinornis : Stats -->
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Dinornis"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.15</MeleeDodgeChance>
+        <MeleeCritChance>0.5</MeleeCritChance>
+        <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Macrauchenia ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Quadruped</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Macrauchenia : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="FrontLeftLeg"]</xpath>
+    <value>
+        <armorPenetration>0.17</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="FrontRightLeg"]</xpath>
+    <value>
+        <armorPenetration>0.17</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- Patch Macrauchenia : Stats -->
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Macrauchenia"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        <MeleeCritChance>0.5</MeleeCritChance>
+        <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+    <!-- ========== Quinkana ========== -->
+
+    <li Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Quinkana"]</xpath>
+    <value>
+        <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Serpentine</bodyShape>
+        </li>
+    </value>
+    </li>
+
+    <!-- Patch Quinkana : Tools / Verbs -->
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="FrontLeftClaws"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="FrontLeftClaws"]</xpath>
+    <value>
+        <armorPenetration>0.15</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="FrontRightClaws"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="FrontRightClaws"]</xpath>
+    <value>
+        <armorPenetration>0.15</armorPenetration>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ToolCE</value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
+    <value>
+        <armorPenetration>0.3</armorPenetration>
+    </value>
+    </li>
+
+    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
+    <li Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
+    </li>
+
+    <!-- Patch Quinkana : Stats -->
+
+    <!-- Patch statBases last so that we know all previous sequence entries succeeded.
+         These values are easy to check in-game. -->
+    <li Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Quinkana"]/statBases</xpath>
+    <value>
+        <MeleeDodgeChance>0.09</MeleeDodgeChance>
+        <MeleeCritChance>0.4</MeleeCritChance>
+        <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+
+    </value>
+    </li>
+
+  </operations> <!-- End sequence -->
+  </Operation>  <!-- End sequence -->
+
+</Patch>
+

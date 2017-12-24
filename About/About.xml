@@ -1,4 +1,10 @@
-Combat Extended compatibility patch for Megafauna (b18).
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>[test] Megafauna + CE compatibility patch (b18)</name>
+  <author>rwtesting</author>
+  <url>https://github.com/rwtesting/CEPatchMegafauna</url>
+  <targetVersion>0.18.1722</targetVersion>
+  <description>Combat Extended compatibility patch for Megafauna (b18).
 
 Makes Megafauna b18 compatible with Combat Extended b18.
 
@@ -18,3 +24,6 @@ Load order:
 
 The MF+CE a17 patch by Kodapa / Bloody Spy! can be found here:
 http://steamcommunity.com/sharedfiles/filedetails/?id=1092233785
+</description>
+</ModMetaData>
+
