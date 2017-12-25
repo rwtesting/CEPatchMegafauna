@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- Warning: This patch will break if original mod moves weapons into diff files.
+         To fix this, please re-run script using new mod file paths. -->
+
   <Operation Class="PatchOperationSequence">
   <success>Always</success>
   <operations>
@@ -1099,8 +1102,8 @@
     </value>
     </li>
 
-  </operations> <!-- End sequence -->
-  </Operation>  <!-- End sequence -->
+  </operations>  <!-- end sequence -->
+  </Operation>   <!-- end sequence -->
 
 </Patch>
 

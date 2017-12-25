@@ -4,8 +4,6 @@ use warnings;
 
 use lib "../../_lib";
 use RWPatcher::Animals;
-use XML::Simple;
-use File::Basename qw(basename dirname);
 
 #
 # Generate patch to make entitiesauria races compatible with Combat Extended, b18.
@@ -212,12 +210,12 @@ my %PATCHABLES = (
 );
 
 my $patcher = new RWPatcher::Animals(
-    sourcemod => 'Megafauna',
+    sourcemod   => $SOURCEMOD,
     sourcefiles => \@SOURCEFILES,
-    cedata => \%PATCHABLES,
+    cedata      => \%PATCHABLES,
 ) or die("ERR: Failed new RWPatcher::Animals: $!\n");
 
-$patcher->generate_patches or die("ERR: generate_patches: $!\n");
+$patcher->generate_patches();
 
 exit(0);
 
