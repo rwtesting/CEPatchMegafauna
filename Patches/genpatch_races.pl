@@ -216,6 +216,7 @@ foreach my $sourcefile (@SOURCEFILES)
         sourcemod  => $SOURCEMOD,
         sourcefile => $sourcefile,
         cedata     => \%PATCHABLES,
+	expected_parents => "AnimalThingBase",
     ) or die("ERR: Failed new RWPatcher::Animals: $!\n");
 
     $patcher->generate_patches();
