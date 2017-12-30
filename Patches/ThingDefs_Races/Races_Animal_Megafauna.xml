@@ -38,11 +38,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Arthropleura"]/tools/li[linkedBodyPartsGroup="Mouth"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Arthropleura : Stats -->
 
 
@@ -90,11 +85,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Doedicurus"]/tools/li[linkedBodyPartsGroup="TailWeapon"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -207,11 +197,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Entelodont"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Entelodont : Stats -->
@@ -413,11 +398,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Titanis"]/tools/li[linkedBodyPartsGroup="Feet"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Titanis"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
         <attribute>Class</attribute>
@@ -429,11 +409,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Titanis"]/tools/li[linkedBodyPartsGroup="Beak"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Titanis : Stats -->
@@ -483,11 +458,6 @@
     <value>
         <armorPenetration>0.2</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Titanoboa"]/tools/li[linkedBodyPartsGroup="Mouth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Titanoboa : Stats -->
@@ -741,11 +711,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Smilodon"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Smilodon : Stats -->
 
 
@@ -945,11 +910,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Procoptodon"]/tools/li[linkedBodyPartsGroup="FeetGroup"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Procoptodon"]/tools/li[linkedBodyPartsGroup="LeftHand"]</xpath>
         <attribute>Class</attribute>
@@ -963,11 +923,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Procoptodon"]/tools/li[linkedBodyPartsGroup="LeftHand"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Procoptodon"]/tools/li[linkedBodyPartsGroup="RightHand"]</xpath>
         <attribute>Class</attribute>
@@ -979,11 +934,6 @@
     <value>
         <armorPenetration>0.17</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Procoptodon"]/tools/li[linkedBodyPartsGroup="RightHand"]/surpriseAttack</xpath>
     </li>
 
     <li Class="PatchOperationAttributeSet">
@@ -1072,11 +1022,6 @@
     <value>
         <armorPenetration>0.2</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Megalania"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Megalania : Stats -->

@@ -38,11 +38,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gomphotaria"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Gomphotaria : Stats -->
 
 
@@ -118,11 +113,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Diprotodon"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Diprotodon : Stats -->
 
 
@@ -172,11 +162,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontLeftPaw"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]</xpath>
         <attribute>Class</attribute>
@@ -190,11 +175,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="FrontRightPaw"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="Teeth"]</xpath>
         <attribute>Class</attribute>
@@ -206,11 +186,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="ShortfacedBear"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch ShortfacedBear : Stats -->
@@ -286,11 +261,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Dinocrocuta"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Dinocrocuta : Stats -->
@@ -456,11 +426,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Andrewsarchus"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
-    </li>
-
     <!-- Patch Andrewsarchus : Stats -->
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
@@ -502,11 +467,6 @@
     </value>
     </li>
 
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Feet"]/surpriseAttack</xpath>
-    </li>
-
     <li Class="PatchOperationAttributeSet">
     <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Beak"]</xpath>
         <attribute>Class</attribute>
@@ -518,11 +478,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Dinornis"]/tools/li[linkedBodyPartsGroup="Beak"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Dinornis : Stats -->
@@ -657,11 +612,6 @@
     <value>
         <armorPenetration>0.3</armorPenetration>
     </value>
-    </li>
-
-    <!-- HACK: temporarily remove stun nodes to prevent CE v0.18.0.2 beta null object error -->
-    <li Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Quinkana"]/tools/li[linkedBodyPartsGroup="Teeth"]/surpriseAttack</xpath>
     </li>
 
     <!-- Patch Quinkana : Stats -->
