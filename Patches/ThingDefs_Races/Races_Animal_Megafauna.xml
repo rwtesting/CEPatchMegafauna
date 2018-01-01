@@ -50,6 +50,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Arthropleura"]/statBases</xpath>
     <value>
@@ -138,6 +139,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Doedicurus"]/statBases</xpath>
     <value>
@@ -211,6 +213,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Entelodont"]/statBases</xpath>
     <value>
@@ -286,6 +289,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Gigantopithecus"]/statBases</xpath>
     <value>
@@ -361,6 +365,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Paraceratherium"]/statBases</xpath>
     <value>
@@ -423,6 +428,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Titanis"]/statBases</xpath>
     <value>
@@ -472,6 +478,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Titanoboa"]/statBases</xpath>
     <value>
@@ -560,6 +567,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="WoolyMammoth"]/statBases</xpath>
     <value>
@@ -648,6 +656,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Elasmotherium"]/statBases</xpath>
     <value>
@@ -723,6 +732,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Smilodon"]/statBases</xpath>
     <value>
@@ -798,6 +808,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Chalicotherium"]/statBases</xpath>
     <value>
@@ -873,6 +884,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Megaloceros"]/statBases</xpath>
     <value>
@@ -961,6 +973,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Procoptodon"]/statBases</xpath>
     <value>
@@ -1036,6 +1049,7 @@
 
     <!-- Patch statBases last so that we know all previous sequence entries succeeded.
          These values are easy to check in-game. -->
+
     <li Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Megalania"]/statBases</xpath>
     <value>
